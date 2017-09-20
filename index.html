@@ -35,9 +35,10 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Welcome!</h1>
                     <hr>
-                    <p>The startup interface provides the basic instructions to your participants, and also collect input from the participant/experimenter the participant ID so that you can generate the correct data log for a particular experiment session.</p>
+                    <P>For this experiment, I am interested in finding out how the different copypasting methods of AutoComPaste and Ctrl-C + Ctrl-V compare in terms of performance. Hence, I will be asking you to copy and paste text from one window to another.</P>
 
-                    <p>This is a template. Please write your participant number ID given by your experimenter. Participant IDs should only consist of alphanumeric characters.</p>
+                    <p>Please enter your participant number ID given by your experimenter.</p>
+                    
                     <form class="form-inline" id="pid-form">
                         <div class="form-group">
                             <label for="pid">Participant ID</label>
@@ -64,7 +65,7 @@
                         ACPToolKit.setCurrentParticipantId(pid);
                         window.location = 'questionnaire-pre.html';
                     } else {
-                        alert('Please enter a valid Participant ID (pid)!');
+                        alert('Please enter a valid Participant ID (pid) from 1 to 6!');
                     }
                 });
             });

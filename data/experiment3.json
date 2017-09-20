@@ -1,6 +1,36 @@
 {
     "experiments": [
         { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "window": 1,
+            "window_to_open": [
+                1
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
+        },   
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "window": 1,
+            "window_to_open": [
+                3
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
+        },  
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 1,
+            "window_to_open": [
+                5
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
+        },  
+        { 
             "technique": "TRADITIONAL", 
             "granularity": "phrase",
             "window": 1,
@@ -58,38 +88,44 @@
                 5
             ],
             "data_file": "data/texts.json",
-            "stimuli": "A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor." 
+            "stimuli": "A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor."
         },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                1
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                3
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
-        },  
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                5
+                1,
+                3,
+                5,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                1,
+                3,
+                5,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                1,
+                3,
+                5,
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
-        },  
+        },
         { 
             "technique": "TRADITIONAL",
             "granularity": "phrase",    
@@ -165,11 +201,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
+                4,
                 5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
@@ -177,11 +216,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
+                4,
                 5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
@@ -189,11 +231,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
+                4,
                 5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
@@ -289,46 +334,31 @@
             "stimuli": "A three terminal device in which emitter to collector current is controlled by base current." 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                1
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                3
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                5
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
@@ -396,9 +426,11 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                1
+                1,
+                3,
+                5
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
@@ -406,18 +438,22 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                3
+                1,
+                3,
+                5
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
-        },
+        }, 
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
+                1,
+                3,
                 5
             ],
             "data_file": "data/texts.json",
@@ -498,35 +534,44 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
-                5
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },
+        },  
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
-                5
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
-        }, 
-        { 
+        },  
+=       { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
+                2,
                 3,
-                5
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
@@ -621,53 +666,38 @@
             "data_file": "data/texts.json",
             "stimuli": "An external signal is required to change the output from one state to the other." 
         },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },  
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
-        },  
-=       { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is barrier potential? The natural difference of potential that exists across a forward biased pn junction. What is base biasing? A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor. What is battery? A DC voltage source containing two or more cells that convert chemical energy to electrical energy." 
-        },
         //246
         { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "window": 1,
+            "window_to_open": [
+                2
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
+        },   
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "window": 1,
+            "window_to_open": [
+                4
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
+        },  
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 1,
+            "window_to_open": [
+                6
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
+        },  
+        { 
             "technique": "TRADITIONAL", 
             "granularity": "phrase",
             "window": 1,
@@ -726,37 +756,43 @@
             ],
             "data_file": "data/texts.json",
             "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective." 
-        },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                2
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
-        },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                4
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
         },  
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                6
+                2,
+                4,
+                6,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                2,
+                4,
+                6,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                2,
+                4,
+                6,
             ],
             "data_file": "data/texts.json",
             "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
-        },  
+        },
         { 
             "technique": "TRADITIONAL",
             "granularity": "phrase",    
@@ -832,11 +868,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
+                1,
                 2,
+                3,
                 4,
-                6,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
@@ -844,26 +883,32 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
+                1,
                 2,
+                3,
                 4,
-                6,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz."
         },
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
+                1,
                 2,
+                3,
                 4,
-                6,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
         },
         { 
             "technique": "TRADITIONAL",
@@ -925,7 +970,7 @@
             "data_file": "data/texts.json",
             "stimuli": "Spring clip on the end of a test lead used to make a temporary connection." 
         },
-                { 
+        { 
             "technique": "TRADITIONAL",
             "granularity": "sentence",    
             "window": 6,
@@ -956,49 +1001,34 @@
             "stimuli": "This is in contrast to other adjectives and determiners, which are typically optional." 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                2
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                4
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz."
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
                 6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -1063,9 +1093,11 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                2
+                2,
+                4,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
@@ -1073,22 +1105,26 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                4
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
+                2,
+                4,
                 6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz."
+        }, 
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 3,
+            "window_to_open": [
+                2,
+                4,
+                6
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -1165,39 +1201,48 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
+                1,
                 2,
+                3,
                 4,
+                5,
                 6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
-        },
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
+        },  
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
+                1,
                 2,
+                3,
                 4,
+                5,
                 6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz."
+            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
+        },  
+=       { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 6,
+            "window_to_open": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
         }, 
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 3,
-            "window_to_open": [
-                2,
-                4,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
-        },
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "phrase",
@@ -1288,52 +1333,37 @@
             "data_file": "data/texts.json",
             "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective."
         },
+        //123
         { 
-            "technique": "AUTOCOMPASTE", 
+            "technique": "TRADITIONAL",
             "granularity": "paragraph",
-            "window": 6,
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                1
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
+        },   
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",
+            "window": 1,
+            "window_to_open": [
+                2
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
         },  
         { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                3
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is atomic number? The number of positive charges or protons in the nucleus of an atom. What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification. What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz." 
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
         },  
-=       { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')." 
-        }, 
-        //123
         { 
             "technique": "TRADITIONAL", 
             "granularity": "phrase",
@@ -1393,37 +1423,43 @@
             ],
             "data_file": "data/texts.json",
             "stimuli": "A circuit that increases the voltage, current, or power of a signal." 
-        },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                1
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },   
-        { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
-                2
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
-        },  
+        },
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                3
+                1,
+                2,
+                3,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                1,
+                2,
+                3,
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
+        },
+        { 
+            "technique": "TRADITIONAL",
+            "granularity": "paragraph",    
+            "window": 3,
+            "window_to_open": [
+                1,
+                2,
+                3,
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
-        },  
+        },
         { 
             "technique": "TRADITIONAL",
             "granularity": "phrase",    
@@ -1499,11 +1535,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
                 3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
@@ -1511,11 +1550,14 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
                 3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
@@ -1523,14 +1565,17 @@
         { 
             "technique": "TRADITIONAL",
             "granularity": "paragraph",    
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
                 3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit."  
         },
         { 
             "technique": "TRADITIONAL",
@@ -1623,46 +1668,31 @@
             "stimuli": "A device that converts a radiated electromagnetic wave into an electrical wave."
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                1
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                2
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
         },
         { 
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",    
-            "window": 6,
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 1,
             "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
+                3
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit."  
@@ -1730,9 +1760,11 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                1
+                1,
+                2,
+                3
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
@@ -1740,22 +1772,26 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 1,
+            "window": 3,
             "window_to_open": [
-                2
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 1,
-            "window_to_open": [
+                1,
+                2,
                 3
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit."  
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
+        }, 
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "paragraph",
+            "window": 3,
+            "window_to_open": [
+                1,
+                2,
+                3
+            ],
+            "data_file": "data/texts.json",
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -1832,38 +1868,47 @@
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
             "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },
+        },  
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current." 
-        }, 
-        { 
+            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
+        },  
+=       { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "paragraph",
-            "window": 3,
+            "window": 6,
             "window_to_open": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6
             ],
             "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit." 
+            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit."  
         },
         { 
             "technique": "AUTOCOMPASTE", 
@@ -1954,51 +1999,6 @@
             ],
             "data_file": "data/texts.json",
             "stimuli": "A circuit that increases the voltage, current, or power of a signal."
-        },
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there" 
-        },  
-        { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats. What is alternator? Name for an AC generator. What is ammeter? A meter used to measure current."
-        },  
-=       { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "paragraph",
-            "window": 6,
-            "window_to_open": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6
-            ],
-            "data_file": "data/texts.json",
-            "stimuli": "What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave. What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times. What is armature? The rotating or moving component of a magnetic circuit."  
         }, 
     ]
 }

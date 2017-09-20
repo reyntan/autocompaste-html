@@ -1,4 +1,4 @@
-var ACPToolKit = (function () {
+    var ACPToolKit = (function () {
     // ACPToolKit depends on DataStorage. Must be loaded after DataStorage.js.
     var module = {};
 
@@ -80,10 +80,12 @@ var ACPToolKit = (function () {
             currentTrialOptions = options;
 
             var data_file = options.data_file;
+            var window_to_open = options.window_to_open;
             var stimuli = options.stimuli;
 
             $('.js-expt-technique').text(options.technique);
             $('.js-expt-granularity').text(options.granularity);
+            $('.js-expt-window').text(options.window);
             $('.js-expt-stimuli').text(options.stimuli);
 
             // Clean up DOM
